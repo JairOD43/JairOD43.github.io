@@ -64,11 +64,11 @@ header {
 /* Cards Carousel */
 .icon-cards {
     position: relative;
-    width: 60vw;
-    height: 40vw;
-    max-width: 380px;
-    max-height: 250px;
-    margin: 0;
+    width: 80vw;
+    height: 60vw;
+    max-width: 500px;
+    max-height: 350px;
+    margin: 0 auto;
     color: white;
     perspective: 1000px;
     transform-origin: center;
@@ -76,9 +76,9 @@ header {
 
 .fixed-photos {
     position: fixed;
-    top: 60px; /* Ajustar según la altura del header */
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     z-index: 999;
 }
 
@@ -102,10 +102,10 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 60vw;
-    height: 40vw;
-    max-width: 380px;
-    max-height: 250px;
+    width: 80vw;
+    height: 60vw;
+    max-width: 500px;
+    max-height: 350px;
     box-shadow: 0 5px 20px rgba(0,0,0,.1);
     border-radius: 6px;
     transform-origin: center;
@@ -113,25 +113,25 @@ header {
 
 .icon-cards__item:nth-child(1) {
     background: #FDD94F;
-    transform: rotateY(0) translateZ(35vw);
+    transform: rotateY(0) translateZ(40vw);
 }
 
 .icon-cards__item:nth-child(2) {
     background: #F87949;
-    transform: rotateY(120deg) translateZ(35vw);
+    transform: rotateY(120deg) translateZ(40vw);
 }
 
 .icon-cards__item:nth-child(3) {
     background: #FBAB48;
-    transform: rotateY(240deg) translateZ(35vw);
+    transform: rotateY(240deg) translateZ(40vw);
 }
 
 /* Carousel animation */
 @keyframes carousel {
-    0%,  17.5%  { transform: translateZ(-35vw) rotateY(0); }
-    27.5%, 45%  { transform: translateZ(-35vw) rotateY(-120deg); }
-    55%, 72.5%  { transform: translateZ(-35vw) rotateY(-240deg); }
-    82.5%, 100% { transform: translateZ(-35vw) rotateY(-360deg); }
+    0%,  17.5%  { transform: translateZ(-40vw) rotateY(0); }
+    27.5%, 45%  { transform: translateZ(-40vw) rotateY(-120deg); }
+    55%, 72.5%  { transform: translateZ(-40vw) rotateY(-240deg); }
+    82.5%, 100% { transform: translateZ(-40vw) rotateY(-360deg); }
 }
 
 /* Checkbox styles */
@@ -216,67 +216,4 @@ header {
   mix-blend-mode: difference;
   pointer-events: none;
   z-index: 1;
-  transition: 0.3s linear;
-  animation: blobRadius 5s ease infinite, blobBackground 15s ease infinite;
-}
-
-@keyframes blobRadius {
-  0%, 100% {
-    border-radius: 43% 77% 80% 40%/40% 40% 80% 80%;
-  }
-  20% {
-    border-radius: 47% 73% 61% 59%/47% 75% 45% 73%;
-  }
-  40% {
-    border-radius: 46% 74% 74% 46%/74% 58% 62% 46%;
-  }
-  60% {
-    border-radius: 47% 73% 61% 59%/40% 40% 80% 80%;
-  }
-  80% {
-    border-radius: 50% 70% 52% 68%/51% 61% 59% 69%;
-  }
-}
-
-@keyframes blobBackground {
-  0%, 100% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-}
-
-/* Navigation */
-.wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background: #212121;
-}
-
-.nav {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
-}
-
-.nav__link {
-  color: #fff;
-  list-style: none;
-  cursor: pointer;
-  font-size: 5vw;
-  font-family: "Montserrat", sans-serif;
-  transition: 0.25s ease;
-}
-
-.nav__link:not(:last-child) {
-  margin-bottom: 50px;
-}
-
-.nav__link:hover {
-  transform: translateX(25px);
-}
+  transition: 
