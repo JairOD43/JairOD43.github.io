@@ -1,3 +1,19 @@
+/* CSS code */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+
+/* Reset and Body Styles */
+body {
+    margin: 0;
+    padding-top: 70px; /* Ajustar según la altura del header */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #110F15;
+    height: 100%;
+    overflow: hidden;
+}
+
 /* Header */
 header {
     background-color: #222;
@@ -118,22 +134,6 @@ header {
     82.5%, 100% { transform: translateZ(-35vw) rotateY(-360deg); }
 }
 
-/* Demo styles */
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding-top: 70px; /* Ajustar según la altura del header */
-}
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: #110F15;
-}
-
 /* Checkbox styles */
 .checkbox {
     position: relative;
@@ -205,14 +205,8 @@ body {
     75% { transform: scale(1.05, 0.95); }
     to { transform: scale(1, 1); }
 }
-@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
-body {
-  overflow: hidden;
-  margin: 0;
-}
-* {
-  box-sizing: border-box;
-}
+
+/* Blob cursor styles */
 #cursorBlob {
   width: 50px;
   height: 50px;
@@ -251,6 +245,8 @@ body {
     background-position: 100% 50%;
   }
 }
+
+/* Navigation */
 .wrap {
   display: flex;
   justify-content: center;
@@ -266,6 +262,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .nav__link {
   color: #fff;
   list-style: none;
@@ -274,9 +271,11 @@ body {
   font-family: "Montserrat", sans-serif;
   transition: 0.25s ease;
 }
+
 .nav__link:not(:last-child) {
   margin-bottom: 50px;
 }
+
 .nav__link:hover {
   transform: translateX(25px);
 }
