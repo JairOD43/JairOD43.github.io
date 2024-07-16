@@ -6,6 +6,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: .5rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo-header img {
@@ -52,6 +56,14 @@ header {
     color: white;
     perspective: 1000px;
     transform-origin: center;
+}
+
+.fixed-photos {
+    position: fixed;
+    top: 60px; /* Ajustar según la altura del header */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
 }
 
 .icon-cards__content {
@@ -110,6 +122,8 @@ header {
 html,
 body {
     height: 100%;
+    margin: 0;
+    padding-top: 70px; /* Ajustar según la altura del header */
 }
 
 body {
