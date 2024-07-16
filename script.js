@@ -4,7 +4,7 @@ function classToggle() {
   el.classList.toggle('step-animation');
 }
 
-document.querySelector('#toggle-animation').addEventListener('click', classToggle);
+document.querySelector('#toggle-animation').addEventListener('change', classToggle);
 
 const blobCursor = (() => {  
   const cursor = document.querySelector('#cursorBlob');
