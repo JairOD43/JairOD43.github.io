@@ -6,32 +6,30 @@
     <title>Portafolio de Trabajos</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header class="header">
-        <div class="logo-header">
-            <a href="#"><img src="img/Dropcoding.svg" alt="Logo"></a>
-        </div>
-        <div class="nav-menu">
-            <input type="checkbox" id="check">    
-            <label for="check" class="checkbtn">
-                <i class="menu-icon"><img src="img/menu.svg" alt="Menu Icon"></i>
-            </label>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#yo">Yo</a></li>
-                <li><a href="#trabajos">Trabajos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <figure class="icon-cards mt-3 fixed-photos">
-        <div class="icon-cards__content">
-          <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">🙂</span></div>
-          <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">😊</span></div>
-          <div class="icon-cards__item d-flex align-items-center justify-content-center"><span class="h1">😀</span></div>
-        </div>
-    </figure>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
       
     <div class="checkbox">
         <input class="d-none" id="toggle-animation" type="checkbox" checked />
